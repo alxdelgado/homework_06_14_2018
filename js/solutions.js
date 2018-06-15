@@ -16,4 +16,53 @@ console.log('JS is working');
 ////////////// COMMIT 001 ///////////
 
 
+//// PALINDROME //// 
+
+// Write a function checkPalindrome that accepts a single argument, a string.
+
+// The function should return true (Boolean) if the string is a palindrome, false if it is not.
+
+// Make sure your function will give the correct answer for words with capital letters.
+
+const checkPalindrome = (cut) => {
+  const lowerCase = cut.toLowerCase(); 
+  console.log(lowerCase);
+  const splitString = lowerCase.split('');
+  console.log(splitString);
+  const arr1 = splitString.reverse();
+  console.log(arr1);
+  const reversedString = arr1.join("");
+  console.log(reversedString);
+
+  if (cut === reversedString){
+    
+    return true;
+  
+  } else {
+    
+    return false;
+  }
+
+
+}
+
+console.log(checkPalindrome("radar"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
